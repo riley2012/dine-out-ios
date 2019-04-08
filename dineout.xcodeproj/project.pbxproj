@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B7A1F82EFE35A0C628F1460 /* Pods_dineoutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06206DBAFB9B2B02A9FF7F25 /* Pods_dineoutUITests.framework */; };
+		49C9DA8133F36755D29B3C9B /* Pods_dineoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8AD4A0D4EC1E2DB5F5011C /* Pods_dineoutTests.framework */; };
+		86370F3D225A8099003DD8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86370F3C225A8099003DD8BB /* AppDelegate.swift */; };
+		86370F3F225A8099003DD8BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86370F3E225A8099003DD8BB /* ViewController.swift */; };
+		86370F42225A8099003DD8BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86370F40225A8099003DD8BB /* Main.storyboard */; };
+		86370F44225A8099003DD8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86370F43225A8099003DD8BB /* Assets.xcassets */; };
+		86370F47225A8099003DD8BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86370F45225A8099003DD8BB /* LaunchScreen.storyboard */; };
+		86370F52225A8099003DD8BB /* dineoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86370F51225A8099003DD8BB /* dineoutTests.swift */; };
+		86370F5D225A8099003DD8BB /* dineoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86370F5C225A8099003DD8BB /* dineoutUITests.swift */; };
+		865E7068225AFCE1001C7518 /* PlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E7067225AFCE1001C7518 /* PlacesService.swift */; };
+		865E706B225AFD4E001C7518 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E706A225AFD4E001C7518 /* Places.swift */; };
+		865E706E225B027A001C7518 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E706D225B027A001C7518 /* Logger.swift */; };
+		865E7070225B08D4001C7518 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E706F225B08D4001C7518 /* ViewModel.swift */; };
+		865E7072225B30FF001C7518 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E7071225B30FF001C7518 /* PlaceTableViewCell.swift */; };
+		865E7074225B582D001C7518 /* ToneAnalyzerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E7073225B582D001C7518 /* ToneAnalyzerService.swift */; };
+		865E7076225B5DE7001C7518 /* DocumentTones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E7075225B5DE7001C7518 /* DocumentTones.swift */; };
+		865E7079225B7D2C001C7518 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865E7078225B7D2C001C7518 /* ApiKeys.plist */; };
+		865E707B225B7E6B001C7518 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E707A225B7E6B001C7518 /* ApiKeys.swift */; };
+		B502797D820C0EC2ED9D329B /* Pods_dineout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6306A87013AF074BB6AAFE3E /* Pods_dineout.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86370F4E225A8099003DD8BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86370F31225A8098003DD8BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86370F38225A8098003DD8BB;
+			remoteInfo = dineout;
+		};
+		86370F59225A8099003DD8BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86370F31225A8098003DD8BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86370F38225A8098003DD8BB;
+			remoteInfo = dineout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01CF3F43CDBF0E4A92085400 /* Pods-dineoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dineoutUITests.release.xcconfig"; path = "Target Support Files/Pods-dineoutUITests/Pods-dineoutUITests.release.xcconfig"; sourceTree = "<group>"; };
+		06206DBAFB9B2B02A9FF7F25 /* Pods_dineoutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dineoutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7C3FB771014D2425B0753E /* Pods-dineoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dineoutTests.release.xcconfig"; path = "Target Support Files/Pods-dineoutTests/Pods-dineoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B8D676ED69DC2A33BCE7A14 /* Pods-dineout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dineout.release.xcconfig"; path = "Target Support Files/Pods-dineout/Pods-dineout.release.xcconfig"; sourceTree = "<group>"; };
+		6306A87013AF074BB6AAFE3E /* Pods_dineout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dineout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC6719E4B191C6CBE4B59E6 /* Pods-dineoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dineoutTests.debug.xcconfig"; path = "Target Support Files/Pods-dineoutTests/Pods-dineoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86370F39225A8099003DD8BB /* dineout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dineout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86370F3C225A8099003DD8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86370F3E225A8099003DD8BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86370F41225A8099003DD8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86370F43225A8099003DD8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86370F46225A8099003DD8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86370F48225A8099003DD8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86370F4D225A8099003DD8BB /* dineoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dineoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86370F51225A8099003DD8BB /* dineoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dineoutTests.swift; sourceTree = "<group>"; };
+		86370F53225A8099003DD8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86370F58225A8099003DD8BB /* dineoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dineoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86370F5C225A8099003DD8BB /* dineoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dineoutUITests.swift; sourceTree = "<group>"; };
+		86370F5E225A8099003DD8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865E7067225AFCE1001C7518 /* PlacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesService.swift; sourceTree = "<group>"; };
+		865E706A225AFD4E001C7518 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		865E706D225B027A001C7518 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		865E706F225B08D4001C7518 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		865E7071225B30FF001C7518 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		865E7073225B582D001C7518 /* ToneAnalyzerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneAnalyzerService.swift; sourceTree = "<group>"; };
+		865E7075225B5DE7001C7518 /* DocumentTones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTones.swift; sourceTree = "<group>"; };
+		865E7078225B7D2C001C7518 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		865E707A225B7E6B001C7518 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		865E707C225BBEFC001C7518 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8E8161BEAD3EF06024F3363C /* Pods-dineoutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dineoutUITests.debug.xcconfig"; path = "Target Support Files/Pods-dineoutUITests/Pods-dineoutUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA8AD4A0D4EC1E2DB5F5011C /* Pods_dineoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dineoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE50FB6BDD702412C9521B9 /* Pods-dineout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dineout.debug.xcconfig"; path = "Target Support Files/Pods-dineout/Pods-dineout.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86370F36225A8098003DD8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B502797D820C0EC2ED9D329B /* Pods_dineout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86370F4A225A8099003DD8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C9DA8133F36755D29B3C9B /* Pods_dineoutTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86370F55225A8099003DD8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B7A1F82EFE35A0C628F1460 /* Pods_dineoutUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		834835CF7CB46652582287CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFE50FB6BDD702412C9521B9 /* Pods-dineout.debug.xcconfig */,
+				2B8D676ED69DC2A33BCE7A14 /* Pods-dineout.release.xcconfig */,
+				7CC6719E4B191C6CBE4B59E6 /* Pods-dineoutTests.debug.xcconfig */,
+				2A7C3FB771014D2425B0753E /* Pods-dineoutTests.release.xcconfig */,
+				8E8161BEAD3EF06024F3363C /* Pods-dineoutUITests.debug.xcconfig */,
+				01CF3F43CDBF0E4A92085400 /* Pods-dineoutUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		86370F30225A8098003DD8BB = {
+			isa = PBXGroup;
+			children = (
+				865E707C225BBEFC001C7518 /* README.md */,
+				86370F3B225A8099003DD8BB /* dineout */,
+				86370F50225A8099003DD8BB /* dineoutTests */,
+				86370F5B225A8099003DD8BB /* dineoutUITests */,
+				86370F3A225A8099003DD8BB /* Products */,
+				834835CF7CB46652582287CA /* Pods */,
+				D818ADEC6EFBA740CAA536CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86370F3A225A8099003DD8BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86370F39225A8099003DD8BB /* dineout.app */,
+				86370F4D225A8099003DD8BB /* dineoutTests.xctest */,
+				86370F58225A8099003DD8BB /* dineoutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86370F3B225A8099003DD8BB /* dineout */ = {
+			isa = PBXGroup;
+			children = (
+				865E7078225B7D2C001C7518 /* ApiKeys.plist */,
+				865E706C225B026B001C7518 /* Util */,
+				865E7069225AFD2C001C7518 /* Models */,
+				865E7066225AFCCD001C7518 /* Network */,
+				86370F3C225A8099003DD8BB /* AppDelegate.swift */,
+				86370F3E225A8099003DD8BB /* ViewController.swift */,
+				865E7071225B30FF001C7518 /* PlaceTableViewCell.swift */,
+				86370F40225A8099003DD8BB /* Main.storyboard */,
+				86370F43225A8099003DD8BB /* Assets.xcassets */,
+				86370F45225A8099003DD8BB /* LaunchScreen.storyboard */,
+				86370F48225A8099003DD8BB /* Info.plist */,
+				865E706F225B08D4001C7518 /* ViewModel.swift */,
+			);
+			path = dineout;
+			sourceTree = "<group>";
+		};
+		86370F50225A8099003DD8BB /* dineoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				86370F51225A8099003DD8BB /* dineoutTests.swift */,
+				86370F53225A8099003DD8BB /* Info.plist */,
+			);
+			path = dineoutTests;
+			sourceTree = "<group>";
+		};
+		86370F5B225A8099003DD8BB /* dineoutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86370F5C225A8099003DD8BB /* dineoutUITests.swift */,
+				86370F5E225A8099003DD8BB /* Info.plist */,
+			);
+			path = dineoutUITests;
+			sourceTree = "<group>";
+		};
+		865E7066225AFCCD001C7518 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				865E7067225AFCE1001C7518 /* PlacesService.swift */,
+				865E7073225B582D001C7518 /* ToneAnalyzerService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		865E7069225AFD2C001C7518 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				865E706A225AFD4E001C7518 /* Places.swift */,
+				865E7075225B5DE7001C7518 /* DocumentTones.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		865E706C225B026B001C7518 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				865E706D225B027A001C7518 /* Logger.swift */,
+				865E707A225B7E6B001C7518 /* ApiKeys.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D818ADEC6EFBA740CAA536CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6306A87013AF074BB6AAFE3E /* Pods_dineout.framework */,
+				CA8AD4A0D4EC1E2DB5F5011C /* Pods_dineoutTests.framework */,
+				06206DBAFB9B2B02A9FF7F25 /* Pods_dineoutUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86370F38225A8098003DD8BB /* dineout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86370F61225A8099003DD8BB /* Build configuration list for PBXNativeTarget "dineout" */;
+			buildPhases = (
+				49EA8836795DEF88F2647C5E /* [CP] Check Pods Manifest.lock */,
+				86370F35225A8098003DD8BB /* Sources */,
+				86370F36225A8098003DD8BB /* Frameworks */,
+				86370F37225A8098003DD8BB /* Resources */,
+				6F5881AE1256B209000FDBAB /* [CP] Copy Pods Resources */,
+				1C89E271EA05433728213F8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dineout;
+			productName = dineout;
+			productReference = 86370F39225A8099003DD8BB /* dineout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86370F4C225A8099003DD8BB /* dineoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86370F64225A8099003DD8BB /* Build configuration list for PBXNativeTarget "dineoutTests" */;
+			buildPhases = (
+				98AA0165C38E5CC61537B2AA /* [CP] Check Pods Manifest.lock */,
+				86370F49225A8099003DD8BB /* Sources */,
+				86370F4A225A8099003DD8BB /* Frameworks */,
+				86370F4B225A8099003DD8BB /* Resources */,
+				22B5A49830417BEB360868DA /* [CP] Copy Pods Resources */,
+				E16B36ED94131A71F41AF47F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86370F4F225A8099003DD8BB /* PBXTargetDependency */,
+			);
+			name = dineoutTests;
+			productName = dineoutTests;
+			productReference = 86370F4D225A8099003DD8BB /* dineoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86370F57225A8099003DD8BB /* dineoutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86370F67225A8099003DD8BB /* Build configuration list for PBXNativeTarget "dineoutUITests" */;
+			buildPhases = (
+				01122233D3EFFEA15EA03EA6 /* [CP] Check Pods Manifest.lock */,
+				86370F54225A8099003DD8BB /* Sources */,
+				86370F55225A8099003DD8BB /* Frameworks */,
+				86370F56225A8099003DD8BB /* Resources */,
+				1D7963FC0F25D9CF5EA9299D /* [CP] Copy Pods Resources */,
+				92BD55836D0CD43F7EFAC6D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86370F5A225A8099003DD8BB /* PBXTargetDependency */,
+			);
+			name = dineoutUITests;
+			productName = dineoutUITests;
+			productReference = 86370F58225A8099003DD8BB /* dineoutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86370F31225A8098003DD8BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					86370F38225A8098003DD8BB = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					86370F4C225A8099003DD8BB = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 86370F38225A8098003DD8BB;
+					};
+					86370F57225A8099003DD8BB = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 86370F38225A8098003DD8BB;
+					};
+				};
+			};
+			buildConfigurationList = 86370F34225A8098003DD8BB /* Build configuration list for PBXProject "dineout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86370F30225A8098003DD8BB;
+			productRefGroup = 86370F3A225A8099003DD8BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86370F38225A8098003DD8BB /* dineout */,
+				86370F4C225A8099003DD8BB /* dineoutTests */,
+				86370F57225A8099003DD8BB /* dineoutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86370F37225A8098003DD8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86370F47225A8099003DD8BB /* LaunchScreen.storyboard in Resources */,
+				865E7079225B7D2C001C7518 /* ApiKeys.plist in Resources */,
+				86370F44225A8099003DD8BB /* Assets.xcassets in Resources */,
+				86370F42225A8099003DD8BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86370F4B225A8099003DD8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86370F56225A8099003DD8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01122233D3EFFEA15EA03EA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dineoutUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C89E271EA05433728213F8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dineout/Pods-dineout-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dineout/Pods-dineout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D7963FC0F25D9CF5EA9299D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dineoutUITests/Pods-dineoutUITests-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dineoutUITests/Pods-dineoutUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22B5A49830417BEB360868DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dineoutTests/Pods-dineoutTests-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dineoutTests/Pods-dineoutTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49EA8836795DEF88F2647C5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dineout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F5881AE1256B209000FDBAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dineout/Pods-dineout-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dineout/Pods-dineout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92BD55836D0CD43F7EFAC6D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dineoutUITests/Pods-dineoutUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dineoutUITests/Pods-dineoutUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98AA0165C38E5CC61537B2AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dineoutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E16B36ED94131A71F41AF47F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dineoutTests/Pods-dineoutTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dineoutTests/Pods-dineoutTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86370F35225A8098003DD8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				865E706B225AFD4E001C7518 /* Places.swift in Sources */,
+				865E706E225B027A001C7518 /* Logger.swift in Sources */,
+				86370F3F225A8099003DD8BB /* ViewController.swift in Sources */,
+				865E7074225B582D001C7518 /* ToneAnalyzerService.swift in Sources */,
+				865E707B225B7E6B001C7518 /* ApiKeys.swift in Sources */,
+				865E7072225B30FF001C7518 /* PlaceTableViewCell.swift in Sources */,
+				865E7076225B5DE7001C7518 /* DocumentTones.swift in Sources */,
+				865E7068225AFCE1001C7518 /* PlacesService.swift in Sources */,
+				86370F3D225A8099003DD8BB /* AppDelegate.swift in Sources */,
+				865E7070225B08D4001C7518 /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86370F49225A8099003DD8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86370F52225A8099003DD8BB /* dineoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86370F54225A8099003DD8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86370F5D225A8099003DD8BB /* dineoutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86370F4F225A8099003DD8BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86370F38225A8098003DD8BB /* dineout */;
+			targetProxy = 86370F4E225A8099003DD8BB /* PBXContainerItemProxy */;
+		};
+		86370F5A225A8099003DD8BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86370F38225A8098003DD8BB /* dineout */;
+			targetProxy = 86370F59225A8099003DD8BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86370F40225A8099003DD8BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86370F41225A8099003DD8BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86370F45225A8099003DD8BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86370F46225A8099003DD8BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86370F5F225A8099003DD8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86370F60225A8099003DD8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86370F62225A8099003DD8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE50FB6BDD702412C9521B9 /* Pods-dineout.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76CMF53Q35;
+				INFOPLIST_FILE = dineout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.watsoneducation.sesameworkshop.dineout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86370F63225A8099003DD8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B8D676ED69DC2A33BCE7A14 /* Pods-dineout.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76CMF53Q35;
+				INFOPLIST_FILE = dineout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.watsoneducation.sesameworkshop.dineout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86370F65225A8099003DD8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CC6719E4B191C6CBE4B59E6 /* Pods-dineoutTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dineoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.watsoneducation.sesameworkshop.dineoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dineout.app/dineout";
+			};
+			name = Debug;
+		};
+		86370F66225A8099003DD8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A7C3FB771014D2425B0753E /* Pods-dineoutTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dineoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.watsoneducation.sesameworkshop.dineoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dineout.app/dineout";
+			};
+			name = Release;
+		};
+		86370F68225A8099003DD8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8161BEAD3EF06024F3363C /* Pods-dineoutUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dineoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.watsoneducation.sesameworkshop.dineoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dineout;
+			};
+			name = Debug;
+		};
+		86370F69225A8099003DD8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01CF3F43CDBF0E4A92085400 /* Pods-dineoutUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dineoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.watsoneducation.sesameworkshop.dineoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dineout;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86370F34225A8098003DD8BB /* Build configuration list for PBXProject "dineout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86370F5F225A8099003DD8BB /* Debug */,
+				86370F60225A8099003DD8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86370F61225A8099003DD8BB /* Build configuration list for PBXNativeTarget "dineout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86370F62225A8099003DD8BB /* Debug */,
+				86370F63225A8099003DD8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86370F64225A8099003DD8BB /* Build configuration list for PBXNativeTarget "dineoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86370F65225A8099003DD8BB /* Debug */,
+				86370F66225A8099003DD8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86370F67225A8099003DD8BB /* Build configuration list for PBXNativeTarget "dineoutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86370F68225A8099003DD8BB /* Debug */,
+				86370F69225A8099003DD8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86370F31225A8098003DD8BB /* Project object */;
+}
