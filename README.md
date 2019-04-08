@@ -19,7 +19,9 @@ retrieved places, including reviews. The reviews are sent
 to the Tone Analyzer to request the set of all tones detected 
 in the reviews.
 
-To build and run the app, you'll need a property list file 
+### Building and Running the App with XCode
+
+- Create a property list file 
 named **ApiKeys.plist**, with two key-value pairs:
 
 ```xml
@@ -34,6 +36,11 @@ named **ApiKeys.plist**, with two key-value pairs:
 </dict>
 </plist>
 ```
+
+- cd into the root directory and enter `pod install`
+- click on **dineout.xcworkspace** to open the project
+- Set your bundle id and your team in Project settings
+- Build and run   
 
 See this link for a demo:
 [Dine Out Demo](https://youtu.be/z68OES3vns0)
